@@ -6,6 +6,7 @@ import categoryRoutes from './categoryRoutes.js';
 import transactionRoutes from './transactionRoutes.js';
 import fineRoutes from './fineRoutes.js';
 import reservationRoutes from './reservationRoutes.js';
+import statisticsRoutes from './statisticsRoutes.js';
 
 const router = express.Router();
 
@@ -17,6 +18,7 @@ router.use('/categories', categoryRoutes);
 router.use('/transactions', transactionRoutes);
 router.use('/fines', fineRoutes);
 router.use('/reservations', reservationRoutes);
+router.use('/statistics', statisticsRoutes);
 
 // Health check endpoint
 router.get('/health', (req, res) => {
